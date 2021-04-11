@@ -1,0 +1,32 @@
+{
+  "name": "todo-list-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env PORT=3800 nodemon app.js",
+    "dev": "cross-env PORT=3800 PROD=false QA=false DEV=true node app.js",
+    "qa": "cross-env PORT=3800 PROD=false QA=true DEV=false node app.js",
+    "prod": "cross-env PORT=3800 PROD=true QA=false DEV=false node app.js",
+    "test": "cross-env PORT=3800 mocha"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2"
+  }
+}
